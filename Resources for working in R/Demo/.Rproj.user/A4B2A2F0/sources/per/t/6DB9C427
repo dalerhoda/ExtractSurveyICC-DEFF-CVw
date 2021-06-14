@@ -1,0 +1,32 @@
+{
+    "id": "6DB9C427",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1591626575462.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "SIAdata",
+        "caption": "SIAdata",
+        "totalObservations": "42006",
+        "displayedObservations": "42006",
+        "variables": "12",
+        "cacheKey": "0EBA1A6F",
+        "object": "SIAdata",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=SIAdata&cache_key=0EBA1A6F&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1591364168,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1591626575462,
+    "read_only": false,
+    "read_only_alternatives": []
+}

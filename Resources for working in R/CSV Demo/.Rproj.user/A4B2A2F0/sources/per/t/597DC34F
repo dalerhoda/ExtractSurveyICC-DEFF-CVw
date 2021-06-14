@@ -1,0 +1,32 @@
+{
+    "id": "597DC34F",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1591027292519.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "harmonia_iccs",
+        "caption": "harmonia_iccs",
+        "totalObservations": 105,
+        "displayedObservations": 105,
+        "variables": 52,
+        "cacheKey": "7062AD8E",
+        "object": "harmonia_iccs",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=harmonia_iccs&cache_key=7062AD8E&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 23362710835822674,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1591027292519,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,32 @@
+{
+    "id": "AEC3BFF7",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1591023546101.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "export_row",
+        "caption": "export_row",
+        "totalObservations": 1,
+        "displayedObservations": 1,
+        "variables": 52,
+        "cacheKey": "BCF759FE",
+        "object": "export_row",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=export_row&cache_key=BCF759FE&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 23362710835822674,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1591023546101,
+    "read_only": false,
+    "read_only_alternatives": []
+}
