@@ -1,4 +1,4 @@
-*! iccloop version 1.13 - Biostat Global Consulting - 2020-07-30
+*! iccloop version 1.13 - Biostat Global Consulting - 2024-10-08
 ********************************************************************************
 * Change log
 * 				Updated
@@ -46,8 +46,8 @@
 *                                       Also, do not truncate ICC at 0 or NEFF
 *                                       at N for this work.
 * 2020-06-10	1.12	Dale Rhoda		Add homog_cvg flag to output
-* 2020-07-30	1.13	Wenfeng Gong	Syntax edit to work with Stata v14, too
-*
+* 2024-10-08	1.13	Dale Rhoda		Add footnotecovg footnoteicc footnotedeff
+*                                       to the opplot syntax
 ********************************************************************************
 *
 *
@@ -209,16 +209,8 @@ foreach outcome in `outcomelist' {
 		scalar go_13 = e(N_psu)
 		scalar go_35 = e(N_strata)
 		local clusterid = e(su1) // store the name of the clusterid variable to use below
-		
-		
-		* Fix from Wenfeng Gong to be compatible with Stata v14.2
-		*scalar go_51 = e(V)[1,1] < 1E-15 // coverage is homogenous across clusters if this variance term is essentially zero
+		scalar go_51 = e(V)[1,1] < 1E-15 // coverage is homogenous across clusters if this variance term is essentially zero
 
-		matrix tempm = e(V)
-		scalar go_51 = tempm[1,1] < 1E-15
-		
-		* End of 14.2 fix		
-		
 		count if inlist(`outcome',0,1)
 		scalar go_14 = r(N)
 		scalar go_15 = go_14/go_13
@@ -238,7 +230,8 @@ foreach outcome in `outcomelist' {
 				export(Plots_op/`=scalar(go_12)') ///
 				exportwidth(2000) ///
 				saving("Plots_op/`stratvar'_`stratum'_`outcome'", replace) ///
-				savedata(oppdata, replace) name(opplot, replace)
+				savedata(oppdata, replace) name(opplot, replace) ///
+				footnotecovg footnotedeff footnoteicc
 				
 			graph drop opplot  // drop the graph once it has been saved
 			use oppdata, clear
